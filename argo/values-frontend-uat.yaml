@@ -1,0 +1,13 @@
+environment: "uat"
+
+replicas: 2
+
+image:
+  repository: "533267126074.dkr.ecr.ap-southeast-2.amazonaws.com/dispatchai-frontend"
+  tag: "linda-1"
+
+# ingress:
+#   annotations:
+#     groupName: "dispatchai-uat"
+#     certificateArn: "arn:aws:acm:ap-southeast-2:893774231297:certificate/30afb88c-7fe2-4f9b-8ebf-8253c45eedfc"
+#   host: "uat.getdispatch.ai"
