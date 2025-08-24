@@ -12,8 +12,8 @@ spec:
       helm: 
         releaseName: dispatchai-frontend-uat
         valueFiles:
-          - $values/envs/uat/frontend/values-frontend-uat.yaml
-    - repoURL: git@github.com:Dispatch-AI-com/argo.git
+          - $values/argo/values-frontend-uat.yaml
+    - repoURL: git@github.com:chaolin1984/argocd.git
       targetRevision: main
       ref: values
   destination:
