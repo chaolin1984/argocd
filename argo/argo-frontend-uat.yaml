@@ -4,7 +4,7 @@ metadata:
   name: dispatchai-frontend-uat
   namespace: argocd
 spec:
-  project: dispatchai
+  project: default
   sources:
     - repoURL: git@github.com:Dispatch-AI-com/helm.git
       targetRevision: main
@@ -19,9 +19,9 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: dispatchai-frontend-uat
-  # syncPolicy:
-  #   automated:
-  #     prune: true
-  #     selfHeal: false
-  #   syncOptions:
-  #     - CreateNamespace=true
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+      - CreateNamespace=true
